@@ -1,2 +1,2 @@
 # odoo15
-A hospital management system, developed by using the odoo community edition version 15
+My works on some custom modules, developed by using the odoo community edition version 15
