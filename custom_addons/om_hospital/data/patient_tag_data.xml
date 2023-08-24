@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data noupdate="1">
+        <record id="patient_tag_vip" model="patient.tag" forcecreate="0">
+            <field name="name">VIP</field>
+        </record>
+
+        <record id="patient_tag_premium" model="patient.tag" forcecreate="0">
+            <field name="name">Premium</field>
+        </record>
+
+        <record id="patient_tag_elite" model="patient.tag" forcecreate="0">
+            <field name="name">Elite</field>
+        </record>
+    </data>
+
+
+</odoo>

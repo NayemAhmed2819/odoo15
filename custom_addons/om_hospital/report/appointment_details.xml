@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_appointment_detail">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <h2>Appointment Details</h2>
+                <div class="row mt32 mb32">
+                    <div class="col-3">
+                        <strong>Name</strong>
+                    </div>
+                    <div class="col-2">
+                        <strong>Doctor</strong>
+                    </div>
+                    <div class="col-2">
+                        <strong>Total Amount</strong>
+                    </div>
+                    <div class="col-2">
+                        <strong>Status</strong>
+                    </div>
+                    <div class="col-2">
+                        <strong>Gender</strong>
+                    </div>
+                </div>
+                <t t-foreach="docs" t-as="o">
+                    <div class="page">
+                        <div class="row mt32 mb32">
+                            <div class="col-3">
+                                <p t-field="o.patient_id"/>
+                            </div>
+                            <div class="col-2">
+                                <p t-field="o.doctor_id"/>
+                            </div>
+                            <div class="col-2">
+                                <p t-field="o.total_amount"/>
+                            </div>
+                            <div class="col-2">
+                                <p t-field="o.state"/>
+                            </div>
+                            <div class="col-2">
+                                <p t-field="o.gender"/>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>
